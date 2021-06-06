@@ -1,0 +1,24 @@
+{
+  "name": "nandi",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node server",
+    "dev": "cross-env NODE_ENV=dev nodemon server"
+  },
+  "author": "Prateek Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.11.1",
+    "sequelize": "^6.6.2",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "mysql2": "^2.2.5"
+  }
+}

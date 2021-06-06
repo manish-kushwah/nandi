@@ -1,0 +1,60 @@
+GET http://127.0.0.1:3000 HTTP/1.1
+
+###
+GET http://127.0.0.1:3000/v1/setup/reset HTTP/1.1
+
+###
+GET http://127.0.0.1:3000/v1/setup/alter HTTP/1.1
+
+###
+GET http://127.0.0.1:3000/v1/setup/drop HTTP/1.1
+
+###
+GET http://127.0.0.1:3000/v1/sender-tag HTTP/1.1
+
+###
+POST http://127.0.0.1:3000/v1/sender-tag HTTP/1.1
+Content-Type: application/json
+
+{
+    "tag": "AIRSIM"
+}
+
+###
+PUT http://127.0.0.1:3000/v1/sender-tag/a530738f-952e-49c5-b644-1c40aa5f6641 HTTP/1.1
+Content-Type: application/json
+
+{
+    "tag": "BRGKGN"
+}
+
+###
+DELETE http://127.0.0.1:3000/v1/sender-tag/bdfd0822-0c2f-4d57-b54c-05089aab1f2d HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://127.0.0.1:3000/v1/recipient-no HTTP/1.1
+
+###
+POST http://127.0.0.1:3000/v1/recipient-no HTTP/1.1
+Content-Type: application/json
+
+{
+    "mobile": "0000999998"
+}
+
+###
+PUT http://127.0.0.1:3000/v1/recipient-no/88ec71de-7e7c-451c-b732-3f0a6d8ccf14 HTTP/1.1
+Content-Type: application/json
+
+{
+    "mobile": "4557589686"
+}
+
+###
+DELETE http://127.0.0.1:3000/v1/recipient-no/9335c7a1-9c1d-4367-97b9-47dcc0e16efd HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://127.0.0.1:3000/v1/message/send?sender=BRGKGN&mobile=4557589686&text=hii%20this%20is%20text%20msg HTTP/1.1
+Content-Type: application/json

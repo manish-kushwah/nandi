@@ -1,0 +1,10 @@
+{
+    "db": {
+        "dialect": "mysql",
+        "database": "sequelize",
+        "username": "root",
+        "password": "Root@123",
+        "host": "192.168.99.100",
+        "port": 3306
+    }
+}
