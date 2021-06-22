@@ -4,11 +4,14 @@
   "description": "",
   "scripts": {
     "start": "node server",
-    "dev": "cross-env NODE_ENV=dev nodemon server"
+    "dev": "cross-env NODE_ENV=dev nodemon server",
+    "client": "npm run dev-server --prefix client",
+    "server": "concurrently \"npm run dev\" \"npm run client\""
   },
   "author": "Prateek Kumar",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^6.2.0",
     "config": "^3.3.6",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
@@ -19,6 +22,7 @@
     "sqlite3": "^5.0.2"
   },
   "devDependencies": {
-    "mysql2": "^2.2.5"
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.7"
   }
 }
