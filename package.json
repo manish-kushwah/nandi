@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "node server",
-    "dev": "cross-env NODE_ENV=dev nodemon server"
+    "server": "node server",
+    "dev-server": "cross-env NODE_ENV=dev nodemon server",
+    "dev-client": "webpack serve --mode development --progress --open --hot"
   },
   "author": "Prateek Kumar",
   "license": "ISC",
@@ -16,9 +17,28 @@
     "express": "^4.17.1",
     "express-validator": "^6.11.1",
     "sequelize": "^6.6.2",
-    "sqlite3": "^5.0.2"
+    "sqlite3": "^5.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.3.0",
+    "concurrently": "^6.2.0"
   },
   "devDependencies": {
-    "mysql2": "^2.2.5"
+    "mysql2": "^2.2.5",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^5.2.6",
+    "eslint": "^7.29.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
   }
 }
